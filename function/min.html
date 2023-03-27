@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Min</title>
+    <script>
+        function min(array) {
+            let output = array[0]
+            for (const item of array) {
+                if (item < output) {
+                    output = item
+                }
+            }
+            return output
+        }
+
+        const testArray = [3, 52, 54, 66, 42, 32]
+        console.log(`smallest = ${min(testArray)}`)
+    </script>
+</head>
+
+<body>
+    배열에서의 최소값을 구하는 함수
+</body>
+
+</html>
